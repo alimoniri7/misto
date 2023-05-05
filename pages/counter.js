@@ -10,6 +10,8 @@ export default function Counter() {
 
   return (
     <div>
+      <h1>سلامه چطوری</h1>
+      <p>علی منیری</p>
       <div>
         <button
           aria-label="Increment value"
