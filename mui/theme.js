@@ -1,7 +1,12 @@
 import { createTheme } from "@mui/material";
 
 const theme = createTheme({
+    direction: 'rtl',
     palette: {
+        text:{
+            primary: "#121212",
+            secondary: '#ffffff'
+        },
         blackGray: {
             main: "#121212"
         },
@@ -28,6 +33,9 @@ const theme = createTheme({
         },
         ok: {
            main: "#0BB17F" 
+        },
+        white: {
+            main: '#ffffff'
         }
     }
 })
