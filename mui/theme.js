@@ -2,10 +2,16 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme({
     palette: {
-        darkGray: {
+        blackGray: {
             main: "#121212"
         },
+        darkGray: {
+            main: "#363636"
+        },
         gray: {
+            main: "#9a9a9a"
+        },
+        lightGray: {
             main: "#E6E6E6"
         },
         whiteGray: {

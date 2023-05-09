@@ -8,6 +8,7 @@ const BtnContained = ({
   children,
   width = "125px",
   height = "48px",
+  onClick
 }) => {
   return (
     <Button
@@ -15,16 +16,16 @@ const BtnContained = ({
       sx={{
         width: !fullwidth ? width : 'none',
         height: height,
-        bgcolor: dark ? "darkGray.main" : "whiteGray.main",
+        bgcolor: dark ? "blackGray.main" : "whiteGray.main",
         borderRadius: "0",
         transition: 'all .2s',
         ':hover':{
-            bgcolor: !dark ? "gray.main" : "darkGray.main",
-            opacity: dark ? 0.8 : 1
+            bgcolor: dark ? "darkGray.main" : "lightGray.main",
         }
       }}
+      onClick={onClick}
     >
-      <Typography fontSize={fontSize} color={dark ? "white" : "darkGray.main"}>
+      <Typography fontSize={fontSize} color={dark ? "white" : "blackGray.main"}>
         {children}
       </Typography>
     </Button>
