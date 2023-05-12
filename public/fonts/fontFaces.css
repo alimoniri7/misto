@@ -71,8 +71,8 @@
 }
 
 @font-face {
-    font-family: 'Galey';
-    src: url('./Galey-Semi-Bold.ttf');
+    font-family: 'playfarir';
+    src: url('./PlayfairDisplay-Black.ttf');
 }
 
 * {

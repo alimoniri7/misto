@@ -9,6 +9,7 @@ import BtnContained from "@/components/buttons/BtnContained";
 import RemoveChip from "@/components/chip/RemoveChip";
 import CheckBox from "@/components/checkboxes/CheckBox";
 import Topbar from "@/components/Topbar";
+import Navbar from "@/components/Navbar";
 
 export default function Counter() {
   const count = useSelector((state) => state.counter.value);
@@ -22,6 +23,7 @@ export default function Counter() {
   return (
     <div>
       <Topbar />
+      <Navbar/>
       {/* <div
         style={{
           width: "1000px",

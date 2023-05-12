@@ -15,7 +15,7 @@ import React from 'react';
 const Topbar = () => {
     return (
         <Box bgcolor='blackGray.main' width='100%' display={{xs: 'none', sm: 'flex'}} justifyContent='center' alignItems='flex-start'>
-            <Box maxWidth="1180px" width="95%" padding={0.5} display='flex' alignItems='center' justifyContent='space-between'>
+            <Box maxWidth="1280px" width="95%" padding={0.5} display='flex' alignItems='center' justifyContent='space-between'>
 
                 <Box display='flex' gap={3} alignItems='center'>
                     <Box display='flex' alignItems='center' gap={1}>
