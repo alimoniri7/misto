@@ -1,9 +1,8 @@
+'use client'
 import theme from '@/mui/theme';
-import Clock from '@/public/icons/Clock';
 import ClockFilled from '@/public/icons/ClockFilled';
 import FacebookFilled from '@/public/icons/FacebookFilled';
 import InstagramFilled from '@/public/icons/InstagramFilled';
-import Location from '@/public/icons/Location';
 import LocationFilled from '@/public/icons/LocationFilled';
 import PhoneFilled from '@/public/icons/PhoneFilled';
 import Pinterest from '@/public/icons/Pinterest';

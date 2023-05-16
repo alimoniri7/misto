@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -5,35 +6,26 @@ import {
   increment,
   incrementByAmount,
 } from "../redux/slices/counter";
-import BtnContained from "@/components/buttons/BtnContained";
-import RemoveChip from "@/components/chip/RemoveChip";
-import CheckBox from "@/components/checkboxes/CheckBox";
-import Topbar from "@/components/Topbar";
-import Navbar from "@/components/Navbar";
 
-export default function Counter() {
-  const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
-
-  const [amount, setAmount] = useState(0);
-  const hello = () => alert("hello");
-
-  const [checked, setChecked] = useState(false);
-
-  return (
-    <div>
-      <Topbar />
-      <Navbar/>
-      {/* <div
+const Counter = () => {
+    const count = useSelector((state) => state.counter.value);
+    const dispatch = useDispatch();
+  
+    const [amount, setAmount] = useState(0);
+    return (
+<div>
+      {/* <Topbar />
+      <Navbar/> */}
+      <div
         style={{
           width: "1000px",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
         }}
-      > */}
+      >
 
-        {/* <button
+        <button
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
@@ -54,7 +46,9 @@ export default function Counter() {
       />
       <button onClick={() => dispatch(incrementByAmount(Number(amount) || 0))}>
         increment by amount
-      </button> */}
+      </button>
     </div>
-  );
-}
+    );
+};
+
+export default Counter;
