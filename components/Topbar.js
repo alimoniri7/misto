@@ -1,5 +1,3 @@
-'use client'
-import theme from '@/mui/theme';
 import ClockFilled from '@/public/icons/ClockFilled';
 import FacebookFilled from '@/public/icons/FacebookFilled';
 import InstagramFilled from '@/public/icons/InstagramFilled';
@@ -7,52 +5,52 @@ import LocationFilled from '@/public/icons/LocationFilled';
 import PhoneFilled from '@/public/icons/PhoneFilled';
 import Pinterest from '@/public/icons/Pinterest';
 import TwitterFilled from '@/public/icons/TwitterFilled';
-import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
+import tailwindcolors from 'tailwindcss/colors';
 
 const Topbar = () => {
     return (
-        <Box bgcolor='blackGray.main' width='100%' display={{xs: 'none', sm: 'flex'}} justifyContent='center' alignItems='flex-start'>
-            <Box maxWidth="1280px" width="95%" padding={0.5} display='flex' alignItems='center' justifyContent='space-between'>
+        <div className='bg-black-gray w-full hidden sm:flex justify-center items-start' >
+            <div className='container mx-auto p-2 flex items-center justify-between' >
 
-                <Box display='flex' gap={3} alignItems='center'>
-                    <Box display='flex' alignItems='center' gap={1}>
-                        <PhoneFilled width='16' height='16' fill={theme.palette.white.main}/>
-                        <Typography color='text.secondary' sx={{direction: 'rtl', }} textAlign='left' fontSize='14px'>
+                <div className='flex gap-3 items-center' >
+                    <div className='flex items-center gap-1'>
+                        <PhoneFilled width='16' height='16' fill={tailwindcolors.white}/>
+                        <p dir='ltr' className='text-white text-left text-sm' >
                             +98 912 022 9389
-                        </Typography>
-                    </Box>
-                    <Box display='flex' alignItems='center' gap={1}>
-                        <LocationFilled width='16' height='16' fill={theme.palette.white.main}/>
-                        <Typography color='text.secondary' fontSize='13px' >
+                        </p>
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <LocationFilled width='16' height='16' fill={tailwindcolors.white}/>
+                        <p className='text-white text-xs' >
                         ایران، تهران، دریاچه چیتگر
-                        </Typography>
-                    </Box>
-                    <Box display='flex' alignItems='center' gap={1}>
-                        <ClockFilled width='16' height='16' fill={theme.palette.white.main}/>
-                        <Typography color='text.secondary' fontSize='13px' >
+                        </p>
+                    </div>
+                    <div className='flex items-center gap-1' display='flex' alignItems='center' gap={1}>
+                        <ClockFilled width='16' height='16' fill={tailwindcolors.white}/>
+                        <p className='text-white text-xs' >
                         تمام هفته 24/7
-                        </Typography>
-                    </Box>
+                        </p>
+                    </div>
 
-                </Box>
-                <Box display='flex' alignItems='center' gap={1}>
-                    <Link href='#' style={{lineHeight: '0'}}>
-                        <FacebookFilled width='16' height='16' fill={theme.palette.white.main}/>
+                </div>
+                <div className='flex items-center gap-2' >
+                    <Link href='#' className='leading-none'>
+                        <FacebookFilled width='16' height='16' fill={tailwindcolors.white}/>
                     </Link>
-                    <Link href='#' style={{lineHeight: '0'}}>
-                        <TwitterFilled width='16' height='16' fill={theme.palette.white.main}/>
+                    <Link href='#' className='leading-none'>
+                        <TwitterFilled width='16' height='16' fill={tailwindcolors.white}/>
                     </Link>
-                    <Link href='#' style={{lineHeight: '0'}}>
-                        <Pinterest width='16' height='16' fill={theme.palette.white.main}/>
+                    <Link href='#' className='leading-none'>
+                        <Pinterest width='16' height='16' fill={tailwindcolors.white}/>
                     </Link>
-                    <Link href='#' style={{lineHeight: '0'}}>
-                        <InstagramFilled width='16' height='16' fill={theme.palette.white.main}/>
+                    <Link href='#' className='leading-none'>
+                        <InstagramFilled width='16' height='16' fill={tailwindcolors.white}/>
                     </Link>
-                </Box>
-            </Box>
-        </Box>
+                </div >
+            </div>
+        </div>
     );
 };
 

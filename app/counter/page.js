@@ -15,8 +15,9 @@ export default function Count() {
   return (
     <div>
       <Topbar />
+      {/* <div className="bg-black-gray  w-80 h-80">hello</div> */}
       {/* <Navbar/> */}
-      <Counter/>
+      {/* <Counter/> */}
     </div>
   );
 }
