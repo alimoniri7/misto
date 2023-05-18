@@ -4,8 +4,9 @@
 @tailwind utilities;
 
 @layer base {
-    html {
+    body {
       font-family: 'tt';
       font-weight: 300;
+      font-size: 14px;
     }
   }

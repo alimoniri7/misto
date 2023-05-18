@@ -5,16 +5,18 @@ import Counter from "@/components/Counter";
 // import RemoveChip from "@/components/chip/RemoveChip";
 // import CheckBox from "@/components/checkboxes/CheckBox";
 import Topbar from "@/components/Topbar";
+import BtnContained from "@/components/buttons/BtnContained";
 // import Navbar from "@/components/Navbar";
 
 export default function Count() {
-//   const hello = () => alert("hello");
+  const hello = () => alert("hello");
 
 //   const [checked, setChecked] = useState(false);
 
   return (
     <div>
       <Topbar />
+      <BtnContained>تلاش مجدد </BtnContained>
       {/* <div className="bg-black-gray  w-80 h-80">hello</div> */}
       {/* <Navbar/> */}
       {/* <Counter/> */}
