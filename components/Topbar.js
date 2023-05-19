@@ -27,7 +27,7 @@ const Topbar = () => {
                         ایران، تهران، دریاچه چیتگر
                         </p>
                     </div>
-                    <div className='flex items-center gap-1' display='flex' alignItems='center' gap={1}>
+                    <div className='flex items-center gap-1'>
                         <ClockFilled width='16' height='16' fill={tailwindcolors.white}/>
                         <p className='text-white text-xs' >
                         تمام هفته 24/7

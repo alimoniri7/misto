@@ -17,8 +17,8 @@ const Minus = ({
         <path
           d="M18 12H6"
           stroke={fill}
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
     </svg>

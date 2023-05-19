@@ -16,8 +16,8 @@ const X = ({
       <path
         d="M6 6L18 18M6 18L18 6L6 18Z"
         stroke={fill}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

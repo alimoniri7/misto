@@ -13,8 +13,8 @@ const BurgerMenu = () => {
         <path
           d="M4 18H20M4 6H20H4ZM4 10H20H4ZM4 14H20H4Z"
           stroke="#121212"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
     </svg>
