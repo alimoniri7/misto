@@ -1,4 +1,3 @@
-import { Box, Typography } from '@mui/material';
 import React from 'react';
 
 const Navbar = () => {
@@ -83,14 +82,14 @@ const Navbar = () => {
         }
     ]
     return (
-        <Box display='flex' alignItems='center' justifyContent='center' width='100%'>
-            <Box display='flex' alignItems='center' justifyContent='space-between' width='95%' maxWidth='1280px'>
-                <Box>
-                    <Typography fontSize='36px' fontWeight='900' sx={{fontFamily: 'playfair !important', fontWeight: '900 !important'}}>MiSto</Typography>
-                </Box>
-                <Box></Box>
-            </Box>
-        </Box>
+        <div className='flex items-center justify-center w-full' >
+            <div className='flex items-center justify-between container'  >
+                <div>
+                    <p className='text-4xl font-black font-[playfair]'>MiSto</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
     );
 };
 
