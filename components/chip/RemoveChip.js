@@ -1,26 +1,43 @@
+'use client'
+import React from 'react';
+
+// hooks
 import useHover from '@/hooks/useHover';
-import theme from '@/mui/theme';
+
+// icons
 import Minus from '@/public/icons/Minus';
 import X from '@/public/icons/X';
-import { Box, Typography } from '@mui/material';
-import React from 'react';
+
+// tailwind
+import tailwindcolors from 'tailwindcss/colors';
+
 
 const RemoveChip = ({
     onClick,
     children
-}) => {
+}) =>
+
+{
+
     const [hoverRef, isHovered] = useHover()
+    const textColor = ()=> {
+        if(isHovered){
+            return 'text-black-gray'
+        }else{
+            return 'text-gray'
+        }
+    }
     return (
-        <Box ref={hoverRef} display='flex' alignItems='center' gap={.1} sx={{cursor: 'pointer'}} onClick={onClick}>
-            <Box>
-                <Typography fontSize='14px' color={isHovered ? 'blackGray.main' : 'gray.main'} >
+        <div className='flex items-center gap-1 cursor-pointer ' ref={hoverRef} onClick={onClick}>
+            <div>
+                <p className={`${textColor()} text-sm`}>
                     {children}
-                </Typography>
-            </Box>
+                </p>
+            </div>
                 {
-                    isHovered ? <Minus width='14' height='14' fill={theme.palette.blackGray.main}/> : <X width='14' height='14' fill={theme.palette.gray.main}/>
+                    isHovered ? <Minus width='14' height='14' fill={tailwindcolors.gray[900]}/> : <X width='14' height='14' fill={tailwindcolors.gray[400]}/>
                 }
-        </Box>
+        </div>
     );
 };
 

@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const BtnContained = ({ dark = false, children, onClick, href, className }) => {
+const BtnContained = ({ dark = true, children, onClick, href, className }) => {
    const [clickEffect, setClickEffect] = useState(false);
    const router = useRouter();
    const clickHandler = () => {
@@ -22,7 +22,7 @@ const BtnContained = ({ dark = false, children, onClick, href, className }) => {
    return (
       <button
          onClick={clickHandler}
-         className={` text-white relative inline-flex group items-center transition-all duration-200 ease-out justify-center px-4 py-2 m-1 cursor-pointer active:shadow-none shadow-lg overflow-hidden ${color} ${className}`}
+         className={`${color}  relative inline-flex group items-center transition-all duration-200 ease-out justify-center px-4 py-2 m-1 cursor-pointer active:shadow-none shadow-lg overflow-hidden  ${className}`}
       >
          <span
             className={`${
